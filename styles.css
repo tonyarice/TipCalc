@@ -4,8 +4,12 @@ body {
     background: linear-gradient(109.6deg, rgb(251, 250, 225) 11.2%, rgb(206, 240, 185) 47.5%, rgb(100, 163, 111) 100.2%);
 }
 
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
 .container {
-    border: 1px solid black;
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -24,7 +28,6 @@ body {
     font-size: 1rem;
     font-weight: 100;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-
 }
 
 .calculator input {
@@ -36,7 +39,6 @@ body {
     border: 1px solid lightgray;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
-
 }
 
 .calculator button {
@@ -55,20 +57,58 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-
-
-h3 {
-    text-align: center;
-    font-weight: bold;
+#quality {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
 }
 
 #divider-top {
     border-bottom: 2px solid rgba(211, 211, 211, 0.5);
 }
 
-
 #divider-bottom {
     text-align: center;
     border-top: 2px solid rgba(211, 211, 211, 0.5);
+}
 
+#tip-amount {
+    visibility: hidden;
+    min-width: 250px;
+    margin: auto;
+    background-color: lightseagreen;
+    color: white;
+    bottom: 30px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+}
+
+#tip-amount .show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
 }
