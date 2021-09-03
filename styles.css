@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: linear-gradient(109.6deg, rgb(251, 250, 225) 11.2%, rgb(206, 240, 185) 47.5%, rgb(100, 163, 111) 100.2%);
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 h3 {
@@ -78,7 +78,7 @@ h3 {
     /* visibility: hidden; */
     min-width: 250px;
     margin: auto;
-    background-color: green;
+    background-color: rgb(3, 3, 53);
     color: white;
     bottom: 30px;
     text-align: center;
