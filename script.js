@@ -9,25 +9,23 @@ const tipAmount = document.getElementById('tip-amount');
 
 
 function calculate() {
-    const tip = ((amount.value * quality.value)) / (guests.value).toFixed(2);
+    const tip = ((amount.value * quality.value) / (guests.value)).toFixed(2);
     amount.value = '';
     guests.value = '';
     quality.value = '';
     
-    if(tip === NaN) {
-        tipAmount.innerHTML = "Tip $0 each";
+    if(tip === 'NaN') {
+        tipAmount.innerHTML = 'Tip $0 each';
         showTipAmount();
 
     } else {
-        tipAmount.innerHTML = "Tip $" + tip + " each";
+        tipAmount.innerHTML = 'Tip $' + tip + ' each';
         showTipAmount();
-    }
-
-    
-    // alert("Hi");
+    };
 }
 
-let button = document.querySelector("#calc-button");
-console.log(button)
-button.addEventListener("click", calculate);
-
+function showTipAmount() {
+    let x = tipAmount;
+    x.className = 'show';
+    setTimeout(function(){x.className = x.className.replace('show', '');}, 3000);
+};
