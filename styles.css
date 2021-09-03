@@ -75,7 +75,7 @@ h3 {
 }
 
 #tip-amount {
-    visibility: hidden;
+    /* visibility: hidden; */
     min-width: 250px;
     margin: auto;
     background-color: green;

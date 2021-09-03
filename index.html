@@ -9,6 +9,8 @@
     <title>Tip Calculator</title>
 </head>
 <body>
+
+    <main>
 <div class="container">
     <div class="calculator">
         <h3>Tip Calculator</h3>
@@ -19,9 +21,9 @@
         <button><i class="fas fa-dollar-sign"></i></button><input id="amount" type="number">
         <br />
         <br />
-        <label for="guest">Number of Guests</label>
+        <label for="guests">Number of Guests</label>
         <br/>
-        <button><i class="fas fa-male"></i></button><input id="guest" type="number">
+        <button><i class="fas fa-male"></i></button><input id="guests" type="number">
         <br />
         <br />
         <label for="quality">Service Quality</label>
@@ -34,19 +36,17 @@
             <option value="0.10">10% - Not so good</option>
             <option value="0.05"> 5% - Absolutely Terrible</option>
         </select>
-        
-       
+         <br/>
+         <br/>
         <div id="divider-bottom">
-            <p></p>
-            <button onclick="calculate()" style="border-radius: 5px; width: fit-content">Calculate</button>
+            <p>
+            <button onClick="calculate()" style="border-radius: 5px; width: fit-content;">Calculate</button>
+        </p>
     </div>
     </div>
-    </div>
-
-    <div id="tip-amount">
-
-    </div>
+    <div id="tip-amount"></div>
 </div>
+</main>
     <script src="script.js"></script>
 </body>
 </html>
